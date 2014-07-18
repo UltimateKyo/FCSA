@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+
+void reverse(int[],int);
+void populateArray(int[],int);
+const int SIZE = 10;
+int values[SIZE];
+
+//This function will call a function to records the value into the array then uses function reverse to reverse the array then print the array
+int main()
+{
+
+	populateArray(values,SIZE);
+	reverse(values,SIZE);
+	cout <<"[";
+	for (int i = 0; i < SIZE; i++)
+	{
+		cout<<values[i]<<" ";
+	}
+	cout <<"]"<<endl;
+		
+}
+
+//This function is to allow user to key in information to the array
+void populateArray(int values[],int sz)
+{
+	for (int i = 0; i < sz; i++)
+	{
+		cout<<"Enter a value: ";
+		cin>>values[i];
+	}
+}
+
+//This function will print out the array records in a reverse order.
+void reverse(int values[],int sz)
+{
+	int revArray[sz];
+	int a = 0;
+	for (int i = sz-1; i >= 0; i--)
+	{
+		revArray[a] = values[i];
+		a++;
+	}
+	
+	for (int i = 0; i < sz; i++)
+	{
+		values[i] = revArray[i];
+	}
+}

@@ -1,0 +1,87 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+const int DB_SIZE = 15;
+
+struct student_t {
+
+	string name;
+	double score;
+	int age;	
+
+};
+
+void populateDatabase(vector<student_t> &);
+void printDatabase(vector<student_t>);
+double getScore(vector<student_t>,string); //based on selected student name
+
+int main() {
+
+	//declare vector
+	vector<student_t> student;
+
+	populateDatabase(student);
+	
+	string input;
+	cout<<"Enter Student Name to search score :";
+	cin>>input;
+	double score = getScore(student,input);
+	cout<<"Score for "<< input << ": "<< score <<endl;
+
+	printDatabase(student);
+
+	
+
+}
+
+double getScore(vector<student_t> s, string name){
+
+	//search
+	
+	for(int i=0;i<s.size();i++) {
+
+		//if (s[i].name == input){
+		if (((s[i].name).compare(name)) == 0) {
+
+			return s[i].score;
+		}
+	}
+	
+	
+
+}
+
+void printDatabase(vector<student_t> s) {
+
+	for (int i=0;i<s.size();i++) {
+
+		cout<<"Name of Student "<<(i+1)<<": "<< s[i].name <<endl;
+		cout<<"Score: "<< s[i].score <<endl;
+		cout<<"Age: "<< s[i].age <<endl; 
+		
+	}
+}
+
+void populateDatabase(vector<student_t> & s) {
+
+	student_t temp;
+
+	for (int i=0;i<DB_SIZE;i++) {
+
+		cout<<"Enter Student "<< (i+1) << "'s Name: ";
+		cin >> temp.name;
+
+		cout<<"Enter Score: ";
+		cin >> temp.score;
+
+		cout<<"Enter Age: ";
+		cin >> temp.age;
+
+		s.push_back(temp);
+		
+	
+	}
+
+}

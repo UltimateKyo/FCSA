@@ -1,0 +1,142 @@
+8
+
+dir
+0
+https://version-control.adelaide.edu.au/svn/a1674929/2014/t2/FCSA/lesson3
+https://version-control.adelaide.edu.au/svn/a1674929
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+dm
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+s
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+main.cpp
+file
+
+
+
+add
+
+dice.cpp
+file
+
+
+
+add
+
+a.out
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+student.cpp
+file
+
+
+
+add
+
+CardCard.h
+file
+
+
+
+add
+
+CashCard.cpp
+file
+
+
+
+add
+
+dmain.cpp
+file
+
+
+
+add
+
+dice.h
+file
+
+
+
+add
+
+student.h
+file
+
+
+
+add
+
+m
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+CashCardMain.cpp
+file
+
+
+
+add
+
+CashCard.h
+file
+
+
+
+add
+

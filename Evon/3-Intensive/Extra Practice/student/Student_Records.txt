@@ -1,0 +1,14 @@
+Student 1
+Name  : kyo
+Class : 5N1
+Total Score for all 3 Subjects : 290
+Best Subject scored : Maths (Score: 90 )
+
+----------------------------
+Student 2
+Name  : Evon
+Class : 5N1
+Total Score for all 3 Subjects : 280
+Best Subject scored : Science (Score: 90 )
+
+----------------------------

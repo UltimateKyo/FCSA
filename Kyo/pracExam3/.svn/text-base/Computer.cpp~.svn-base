@@ -1,0 +1,38 @@
+#include "Computer.h"
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+Computer::Computer() //Default Constructor which assign brand as Dell and is a desktop
+{
+	brand = "Dell";
+	desktop = true;
+}
+
+Computer::Computer(Computer &com) //Obtaining attributes of "com" which is the object pass in then assign the attribute to the source object. Eventually making it a copy constructor
+{
+	brand = com.brand;
+	desktop = com.desktop;
+}
+
+string Computer::getBrand()
+{
+	return brand;
+}
+
+bool Computer::isDesktop()
+{
+	return desktop;
+}
+
+void Computer::setBrand(string b)
+{
+	brand = b;
+}
+
+void Computer::setIsDesktop(bool d)
+{
+	desktop = d;
+}
+

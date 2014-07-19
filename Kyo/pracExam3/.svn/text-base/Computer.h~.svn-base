@@ -1,0 +1,24 @@
+#ifndef COMPUTER_H
+#define COMPUTER_H
+
+#include <string>
+
+using namespace std;
+
+class Computer
+{
+	private:
+	string brand;
+	bool desktop;
+
+	public:
+	Computer(); //Default Constructor
+	Computer(Computer &); //Copy Constructor
+	string getBrand();
+	bool isDesktop();
+	void setBrand(string);
+	void setIsDesktop(bool);
+	
+};
+
+#endif

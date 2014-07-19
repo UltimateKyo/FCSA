@@ -1,0 +1,35 @@
+#include <string>
+#include <iostream>
+using namespace std;
+
+//struct name
+struct name{
+	string firstName;
+	string secondName;
+	string initials;
+};
+
+//struct student
+struct student{
+	name n;
+	int age;
+};
+
+void genInitials(student & stu);
+
+int main(){
+	int age = 21;
+	student s= {{"John","Howard"},age};
+	genInitials(s);
+	cout << s.n.initials << endl;
+}
+
+void genInitials(student & stu)
+{
+	string n1, n2,initial;
+	n1 = stu.n.firstName;
+	n1 = n1.substr(0,1);
+	n2 = stu.n.secondName;
+	n2 = n2.substr(0,1);
+	stu.n.initials = n1 + n2;
+}

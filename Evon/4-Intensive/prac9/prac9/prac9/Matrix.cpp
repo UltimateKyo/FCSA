@@ -38,7 +38,7 @@ Matrix::Matrix(string fn,int r,int c)
     int i = 0;
 	while (fin >> msg)
     {
-        fin >> msg;
+        //fin >> msg;
 		data[i] = msg;
         i++;
 	}

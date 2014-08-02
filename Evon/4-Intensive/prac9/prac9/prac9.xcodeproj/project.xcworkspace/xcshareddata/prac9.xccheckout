@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>2F872AD1-C31B-4CE8-AB1B-BA96B609588C</string>
+	<string>C6200C6D-6E32-4643-B60C-5BE55C553493</string>
 	<key>IDESourceControlProjectName</key>
 	<string>prac9</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>993E321B-5953-43DE-858E-6909667B0BF0</key>
-		<string>https://git.codeproject.com/fishykyo/fcsa</string>
+		<key>C60B36C7-3BD3-408E-AE75-67A62DA84BCA</key>
+		<string>https://github.com/UltimateKyo/FCSA.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>3-Intensive/prac9/prac9/prac9.xcodeproj/project.xcworkspace</string>
+	<string>Evon/4-Intensive/prac9/prac9/prac9.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>993E321B-5953-43DE-858E-6909667B0BF0</key>
-		<string>../../../../..</string>
+		<key>C60B36C7-3BD3-408E-AE75-67A62DA84BCA</key>
+		<string>../../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://git.codeproject.com/fishykyo/fcsa</string>
+	<string>https://github.com/UltimateKyo/FCSA.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>993E321B-5953-43DE-858E-6909667B0BF0</string>
+	<string>C60B36C7-3BD3-408E-AE75-67A62DA84BCA</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>993E321B-5953-43DE-858E-6909667B0BF0</string>
+			<string>C60B36C7-3BD3-408E-AE75-67A62DA84BCA</string>
 			<key>IDESourceControlWCCName</key>
-			<string>workspace</string>
+			<string>!!!Git</string>
 		</dict>
 	</array>
 </dict>

@@ -44,7 +44,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/Evon/Documents/workspace/3-Intensive/prac9/prac9/prac9"
+      customWorkingDirectory = "/Users/Evon/Documents/workspace/!!!Git/Evon/4-Intensive/prac9/prac9/prac9"
       buildConfiguration = "Release"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"

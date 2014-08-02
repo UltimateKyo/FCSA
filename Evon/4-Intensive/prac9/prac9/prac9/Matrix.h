@@ -14,9 +14,10 @@ using namespace std;
 
 class Matrix {
 private:
-	int row;
-	int col;
-	float data[];
+	int row = 10;
+	int col = 10;
+	float* data = new float[row*col];
+    
 public:
 	//Default Constructor
 	Matrix();

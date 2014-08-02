@@ -9,6 +9,7 @@
 #include "Matrix.h"
 #include <string>
 #include <fstream>
+#include <sstream>
 #include <iostream>
 using namespace std;
 
@@ -34,14 +35,16 @@ Matrix::Matrix(string fn,int r,int c)
 	ifstream fin;
 	fin.open(fn.c_str());
 	//r = 2 // c = 4
-	float msg;
+	float num;
     int i = 0;
-	while (fin >> msg)
+	while (fin >> num)
     {
-        fin >> msg;
-		data[i] = msg;
+        //fin >> msg;
+		data[i] = num;
+        //cout << msg <<endl;
         i++;
 	}
+    
     fin.close();
     
 }
@@ -78,7 +81,7 @@ void Matrix::populate(string fn,int r,int c)
 	ifstream fin;
 	fin.open(fn.c_str());
 	//r = 2 // c = 4
-	double msg;
+	float msg;
 	//float *data = new float[row*col];
 	int i = 0;
 	while (fin >> msg)
@@ -156,38 +159,37 @@ Matrix& Matrix::operator*(const Matrix& other)
     
     if (row == other.col)
     {
-        int r1=0, c1=0, r2=0, c2=0, sum=0;
+        int r1=0, c1=0, r2=0, c2=0;
+        float sum=0;
         
         for (int k=0; k < (row * other.col); k++)
         {
             
             for (int m=0; m < (col); m++)
             {
+                printf("M1(%i,%i) X M2(%i,%i)\n",r1,c1,r2,c2);
                 sum += ((data[(r1*col)+c1]) * (other.data[(r2 * other.col)+c2]));
                 
-                if (c1 == (col-1))
-                {
-                    c1=0;
-                    r1++;
-                }
-                else
-                {
-                    c1++;
-                }
-                
-                if (r2 == (other.row-1))
-                {
-                    r2=0;
-                    c2++;
-                }
-                else
-                {
-                    r2++;
-                }
+                c1++;
+                r2++;
                 
             }
             
             m3->data[k] = sum;
+            cout << "Adding Up" << endl;
+            sum = 0;
+            c1=0; r2=0;
+            c2++;
+           
+            if (k == (other.col -1)) //new row of m3
+            {
+                r1++;
+                c2=0;
+            }
+            
+    
+            
+            
             
         }
         

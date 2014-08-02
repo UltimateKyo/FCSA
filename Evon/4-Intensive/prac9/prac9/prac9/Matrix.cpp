@@ -170,24 +170,21 @@ Matrix& Matrix::operator*(const Matrix& other)
                     c1=0;
                     r1++;
                 }
-                else
-                {
-                    c1++;
-                }
                 
                 if (r2 == (other.row-1))
                 {
                     r2=0;
                     c2++;
                 }
-                else
-                {
+                
+					c1++;
                     r2++;
-                }
+                
                 
             }
             
             m3->data[k] = sum;
+			sum=0;
             
         }
         

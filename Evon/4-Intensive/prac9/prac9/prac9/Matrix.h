@@ -16,7 +16,7 @@ class Matrix {
 private:
 	int row;
 	int col;
-	float data[];
+	float data[100];
 public:
 	//Default Constructor
 	Matrix();

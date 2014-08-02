@@ -54,12 +54,4 @@ int main()
 
 	cout << "Matrix 6:" << endl;
 	m6->display();
-
-	//Delocating class memory using destructor
-	m1->~Matrix();
-	m2->~Matrix();
-	m3->~Matrix();
-	m4->~Matrix();
-	m5->~Matrix();
-	m6->~Matrix();
 }

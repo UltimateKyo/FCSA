@@ -1,0 +1,29 @@
+23:34:28 **** Rebuild of configuration Debug for project prac9 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o MatrixMain.o "..\\MatrixMain.cpp" 
+..\MatrixMain.cpp:8:19: warning: extra tokens at end of #include directive [enabled by default]
+ #include <stdio.h>>
+                   ^
+In file included from ..\MatrixMain.cpp:9:0:
+..\Matrix.h:16:12: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int row = 4;
+            ^
+..\Matrix.h:17:12: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int col = 4;
+            ^
+..\Matrix.h:18:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  float *data = new float[row*col];
+                                 ^
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Matrix.o "..\\Matrix.cpp" 
+In file included from ..\Matrix.cpp:8:0:
+..\Matrix.h:16:12: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int row = 4;
+            ^
+..\Matrix.h:17:12: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int col = 4;
+            ^
+..\Matrix.h:18:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  float *data = new float[row*col];
+                                 ^
+g++ -o prac9.exe MatrixMain.o Matrix.o 
+Info: Nothing to build for prac9

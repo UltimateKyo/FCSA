@@ -1,7 +1,11 @@
 #ifndef BANK_H
 #define BANK_H
 
-// ???????? include files ???????
+#include "BankAccount.h"
+#include <string>
+#include <vector>
+
+using namespace std;
 
 class Bank {
 
@@ -16,8 +20,8 @@ class Bank {
     
  private:
 
-  ??? m_name;      // name of this bank
-  ??? m_accounts;  // collection of Bank Accounts held at this bank
+  string m_name;      // name of this bank
+  vector<BankAccount> m_accounts;  // collection of Bank Accounts held at this bank
 };
 
 #endif
